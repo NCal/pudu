@@ -26,14 +26,14 @@ class Layout extends Component {
           <div className="left">
             <header>
               <ul className="main-nav">
-                <Link className={"icon"} to="/">
+                <Link className={"icon"} to="/pudu">
                   <li></li>
                 </Link>
                 <li className={"navTitle"}>
                   <Link to="/">PUDU</Link>
                 </li>
                 <li>
-                  <Link className={"navLink"} to="/about">
+                  <Link className={"navLink"} to="/pudu/about">
                     About
                   </Link>
                 </li>
@@ -44,7 +44,7 @@ class Layout extends Component {
                 </li> */}
                 {/* <li><Link className={'navLink'} to="/airdrop">Airdrop</Link></li> */}
                 <li>
-                  <Link className={"navLink"} to="/stake">
+                  <Link className={"navLink"} to="/pudu/stake">
                     Stake
                   </Link>
                 </li>
@@ -57,7 +57,7 @@ class Layout extends Component {
             </header>
             <div className="mobile-header">
               <ul className="mobile-nav">
-                <Link className={"icon"} to="/">
+                <Link className={"icon"} to="/pudu">
                   <li></li>
                 </Link>
                 {/* <li>
@@ -72,7 +72,7 @@ class Layout extends Component {
                 </li> */}
                 {/* <li><Link className={'navLink'} to="/airdrop">Airdrop</Link></li> */}
                 <li>
-                  <Link className={""} to="/stake">
+                  <Link className={""} to="/pudu/stake">
                     Stake
                   </Link>
                 </li>
@@ -89,13 +89,13 @@ class Layout extends Component {
             {/* <div className="arrow"></div> */}
             <div className="overlay"></div>
             <Switch>
-              <Route path="/" exact component={Stake}></Route>
+              <Route path="/pudu" exact component={Stake}></Route>
               <Route path="/pudu/" exact component={Stake}></Route>
               <Route path="/pudu" exact component={Stake}></Route>
-              <Route path="/about" exact component={About}></Route>
+              <Route path="/pudu/about" exact component={About}></Route>
               {/* <Route path="/tokenomics" exact component={Tokenomics}></Route> */}
               {/* <Route path="/airdrop" exact component={Airdrop}></Route> */}
-              <Route path="/stake" exact component={Stake}></Route>
+              <Route path="/pudu/stake" exact component={Stake}></Route>
               {/* <Route path="/redeem" exact component={Redeem}></Route> */}
               {/* <Route path="/*" component={NotFound}></Route> */}
             </Switch>

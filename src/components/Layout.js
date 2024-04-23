@@ -79,6 +79,7 @@ const Layout = (props) => {
           <Switch>
             <Route path="/" exact component={Stake}></Route>
             <Route path="/pudu/" exact component={Stake}></Route>
+            <Route path="/pudu" exact component={Stake}></Route>
             <Route path="/about" exact component={About}></Route>
             {/* <Route path="/tokenomics" exact component={Tokenomics}></Route> */}
             {/* <Route path="/airdrop" exact component={Airdrop}></Route> */}

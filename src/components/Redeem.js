@@ -29,7 +29,7 @@ class Redeem extends React.Component {
       staked: null,
       totalStaked: null,
       totalStakedSupply: null,
-      provider: new ethers.providers.Web3Provider(window.ethereum),
+      provider: ((window.ethereum != null) ? new ethers.providers.Web3Provider(window.ethereum) : ethers.providers.getDefaultProvider()),
       claimable: null,
       stakingTokencontract: null,
       rewContract: null,

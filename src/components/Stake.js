@@ -30,7 +30,7 @@ class Stake extends React.Component {
       totalStaked: null,
       totalStakedSupply: null,
       currentRewardRate: null,
-      provider: new ethers.providers.Web3Provider(window.ethereum),
+      provider: ((window.ethereum != null) ? new ethers.providers.Web3Provider(window.ethereum) : ethers.providers.getDefaultProvider()),
       claimable: null,
       stakingTokencontract: null,
       rewContract: null,
@@ -41,6 +41,16 @@ class Stake extends React.Component {
       errormsg: null,
     }
   }
+
+  // componentwillmount (){
+  //   console.alert('componentDidMount')
+  // }
+
+
+  componentDidMount (){
+    console.alert('componentDidMount')
+  }
+
 
   componentDidMount = async () => {
     let self = this

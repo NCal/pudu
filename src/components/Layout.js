@@ -85,7 +85,7 @@ const Layout = (props) => {
             {/* <Route path="/airdrop" exact component={Airdrop}></Route> */}
             <Route path="/stake" exact component={Stake}></Route>
             {/* <Route path="/redeem" exact component={Redeem}></Route> */}
-            <Route path="/*" component={NotFound}></Route>
+            {/* <Route path="/*" component={NotFound}></Route> */}
           </Switch>
           <div className="copyright">PUDU 2022</div>
         </div>

@@ -700,7 +700,6 @@ class Redeem extends React.Component {
               </button> */}
             </div>
           </form>
-
           <p className="errormsg errormsg-disabled">{self.state.errormsg}</p>
         </React.Fragment>
         <div className="block"></div>

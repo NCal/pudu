@@ -91,7 +91,6 @@ class Layout extends Component {
             <Switch>
               <Route path="/pudu" exact component={Stake}></Route>
               <Route path="/pudu/" exact component={Stake}></Route>
-              <Route path="/pudu" exact component={Stake}></Route>
               <Route path="/pudu/about" exact component={About}></Route>
               {/* <Route path="/tokenomics" exact component={Tokenomics}></Route> */}
               {/* <Route path="/airdrop" exact component={Airdrop}></Route> */}

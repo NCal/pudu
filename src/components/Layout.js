@@ -33,7 +33,7 @@ class Layout extends Component {
                   <Link to="/">PUDU</Link>
                 </li>
                 <li>
-                  <Link className={"navLink"} to="/pudu/about">
+                  <Link className={"navLink"} to="/about">
                     About
                   </Link>
                 </li>
@@ -44,7 +44,7 @@ class Layout extends Component {
                 </li> */}
                 {/* <li><Link className={'navLink'} to="/airdrop">Airdrop</Link></li> */}
                 <li>
-                  <Link className={"navLink"} to="/pudu/stake">
+                  <Link className={"navLink"} to="/stake">
                     Stake
                   </Link>
                 </li>
@@ -72,7 +72,7 @@ class Layout extends Component {
                 </li> */}
                 {/* <li><Link className={'navLink'} to="/airdrop">Airdrop</Link></li> */}
                 <li>
-                  <Link className={""} to="/pudu/stake">
+                  <Link className={""} to="/stake">
                     Stake
                   </Link>
                 </li>
@@ -89,12 +89,12 @@ class Layout extends Component {
             {/* <div className="arrow"></div> */}
             <div className="overlay"></div>
             <Switch>
-              <Route path="/pudu" exact component={Stake}></Route>
+              <Route path="/" exact component={Stake}></Route>
               <Route path="/pudu/" exact component={Stake}></Route>
-              <Route path="/pudu/about" exact component={About}></Route>
+              <Route path="/about" exact component={About}></Route>
               {/* <Route path="/tokenomics" exact component={Tokenomics}></Route> */}
               {/* <Route path="/airdrop" exact component={Airdrop}></Route> */}
-              <Route path="/pudu/stake" exact component={Stake}></Route>
+              <Route path="/stake" exact component={Stake}></Route>
               {/* <Route path="/redeem" exact component={Redeem}></Route> */}
               {/* <Route path="/*" component={NotFound}></Route> */}
             </Switch>

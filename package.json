@@ -15,6 +15,7 @@
   "scripts": {
     "start": "npm-run-all --parallel devbuild watch devserver",
     "devbuild": "webpack --watch",
+    "build": "webpack",
     "devserver": "nodemon \"./server/index.js\" --watch \"./server\"",
     "watch": "webpack-dev-server --progress --inline --hot --history-api-fallback"
   },

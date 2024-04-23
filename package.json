@@ -2,6 +2,7 @@
   "name": "pudu",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ncal.github.io/pudu",
   "engines": {
     "node": "8.11.1",
     "npm": "6.9.0",

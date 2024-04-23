@@ -10,7 +10,7 @@
 
 # production
 /build
-/src/bundle.js
+# /src/bundle.js
 
 # misc
 /hidden
